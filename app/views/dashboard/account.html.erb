@@ -1,0 +1,7 @@
+<section>
+  <h2>Account</h2>
+  <p>email : <%= current_user.email %></p>
+  <p>username: <%= current_user.username %></p>
+  <%= link_to "dashboard", dashboard_dashboard_path %>
+  <%= link_to "edit user details", edit_user_registration_path %>
+</section>

@@ -7,9 +7,14 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px white solid;
   h1 {
     font-family: $nerko;
     font-size: 4rem;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      color: rgb(216, 216, 216);
+    }
   }
   a {
     color: white;

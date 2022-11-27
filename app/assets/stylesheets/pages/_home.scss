@@ -5,10 +5,10 @@
 
 section {
   background-color: $bg-blue;
+  padding: 2rem 10rem;
 }
 
 .home-section {
-  padding: 2rem 10rem;
   h2 {
     font-size: 3rem;
   }
@@ -33,8 +33,10 @@ section {
 }
 
 @media (max-width: 1020px) {
-  .home-section{
+  section {
     padding: 2rem 3rem;
+  }
+  .home-section{
     article {
       flex-direction: column;
       align-items: center;
