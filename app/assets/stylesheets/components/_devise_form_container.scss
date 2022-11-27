@@ -1,0 +1,34 @@
+@mixin form-input-styles {
+  max-width: 30rem;
+  label {
+    display: none;
+  }
+  label[for="user_remember_me"] {
+    display: block;
+  }
+  input[type="email"], input[type="text"], input[type="password"] {
+    border: 1px solid white;
+    background-color: rgb(116, 199, 247);
+    border-radius: 1rem;
+    transition: all 0.3s ease-in-out;
+    width: 95%;
+    &:focus {
+      background-color: white;
+      box-shadow: 3px 3px 0px black;
+      width: 100%;
+    }
+  }
+  input[type="checkbox"] {
+    background-color: rgb(116, 199, 247);
+    box-shadow: none;
+    &:checked {
+      background-color: black;
+      box-shadow: 3px 3px 0px black;
+      border: 1px solid white;
+    }
+  }
+}
+
+.devise-form-container {
+  @include form-input-styles();
+}
