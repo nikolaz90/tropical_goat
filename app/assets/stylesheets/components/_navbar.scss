@@ -9,6 +9,7 @@
   align-items: center;
   h1 {
     font-family: $nerko;
+    font-size: 4rem;
   }
   a {
     color: white;
@@ -16,6 +17,22 @@
     transition: all 0.2s ease-in-out;
     &:hover {
       color: rgb(216, 216, 216);
+    }
+  }
+}
+
+@media (max-width: 1020px) {
+  .nav-bar {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .nav-bar {
+    h1 {
+      font-size: 2rem;
     }
   }
 }
