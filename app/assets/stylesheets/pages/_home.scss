@@ -1,1 +1,8 @@
 // Specific CSS for your home-page
+* {
+  font-family: $main-font;
+  color: white;
+}
+section {
+  background-color: $bg-blue;
+}

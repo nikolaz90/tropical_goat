@@ -1,12 +1,21 @@
-.navbar-lewagon {
+.nav-bar {
+  background: linear-gradient( #1298cd, $bg-blue);
+  height: 10rem;
+  padding: 2rem 10rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
-  background: white;
-}
-
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+  align-items: center;
+  h1 {
+    font-family: $nerko;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      color: rgb(216, 216, 216);
+    }
+  }
 }
